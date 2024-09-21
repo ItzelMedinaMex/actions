@@ -20,7 +20,7 @@ jobs:
         run: echo "Hola mundo" >> hola.txt #tiene un texto y redirige la salida hacia el hola.txt
 
       - name: Read file
-        run: Cat hola.txt
+        run: cat hola.txt
 
 
   other:
