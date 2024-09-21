@@ -13,9 +13,19 @@ jobs:
       - name: Hola mundo # lista de diferentes steps y debajo definimos la acción
         run: echo "Hola mundo" #directiva que nos permite correr un comando
  
+      - name: touch file
+        run: touch hola.txt
+
+      - name: Set text
+        run: echo "Hola mundo" >> hola.txt #tiene un texto y redirige la salida hacia el hola.txt
+
+      - name: Read file
+        run: Cat hola.txt
+
+
   other:
     runs-on: ubuntu-latest
     
     steps:
     - name: LS
-      run: ls -al
+      run: ls -al   #nos lista directorios
