@@ -12,3 +12,10 @@ jobs:
     steps: 
       - name: Hola mundo # lista de diferentes steps y debajo definimos la acción
         run: echo "Hola mundo" #directiva que nos permite correr un comando
+ 
+  other:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: LS
+      run: ls -al
