@@ -1,0 +1,29 @@
+key: hola mundo 
+# key: "Hola Mundo"
+# los Strings no necesariamente necesitan las comillas para identificarlos.
+
+person:
+  name: Jonh
+  age: 30
+  city: New York
+  items:
+    - item1
+    - item 2
+
+  # listas con cada elemento un valor
+  items2: 
+    - item1: holabola
+    - item2: ola tonotos
+
+  # Funciona princfipalmente con identación (el espacio)
+
+scripts: >
+  hola
+  hola
+  testort
+
+# Scripts multilineas usando el operador OR |
+
+scripts: |
+  touch hola.txt
+  echo "Hola";

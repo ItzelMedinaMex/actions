@@ -1,0 +1,14 @@
+name: Hola mundo
+
+# Eventos, para que el workflow se ejecute tenemos que indicarle cuando se va a ejecutar cuando se realice un evento
+# Se va a ejecutar cuando hagamos push al repositorio
+on: [push]
+
+# los jobs nos permiten ejecutar todo lo que necesitemos dentro de algun servidor
+jobs: 
+  hola:
+    runs-on: ubuntu-latest # para especificar que sistema operativo queiere ejecutar ese job, utilizaremos...
+
+    steps: 
+      - name: Hola mundo # lista de diferentes steps y debajo definimos la acción
+        run: echo "Hola mundo" #directiva que nos permite correr un comando
