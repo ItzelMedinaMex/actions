@@ -1,0 +1,33 @@
+name: main
+
+on: [push]
+
+jobs: 
+    test-build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2  #utilizamos checkout para situarnos dentro de nuestro repositorio
+              
+            - name: ls
+              run: |  #"chmod +x"para darle permiso de ejecución 
+                chmod +x script.sh
+                ./script.sh  
+                
+                
+            - name: Setup Node.js environment   #aqui se configura node
+              uses: actions/setup-node@v4.0.4
+              with:                      #directiva with, que nos pwermite pasarle parametros a este actions
+                node-version: latest
+
+            - name: node version                #aqui se ejecuta la versión de node
+              run: node --version
+
+            - name: PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                php-version: '8.3'
+
+            - name: php version                #aqui se ejecuta la versión de node
+              run: php --version     #php
