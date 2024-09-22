@@ -8,7 +8,7 @@ jobs:
 
         steps:
             - name: Checkout
-              uses: actions/checkout@v4.1.7  #utilizamos checkout para situarnos dentro de nuestro repositorio
+              uses: actions/checkout@v2  #utilizamos checkout para situarnos dentro de nuestro repositorio
               
             - name: ls
               run: |  #"chmod +x"para darle permiso de ejecución 
