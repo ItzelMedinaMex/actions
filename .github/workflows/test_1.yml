@@ -36,7 +36,6 @@ jobs:
     steps:
 
     - name: Checkout  #cuando se ejecute este job, va a comenzar, y lo primero que hará será utilizar este action que pertenece a guithub action, con el nombre checkpous y luego ejecutará el ls
-      uses: action/checkout@v4.1.7
-
+      uses: actions/checkout@v4.1.7
     - name: LS 
       run: ls -al   #nos lista directorios
