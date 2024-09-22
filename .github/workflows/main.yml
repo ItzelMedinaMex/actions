@@ -7,7 +7,7 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: ls
+            - name: Checkout
               uses: actions/checkout@v4.1.7  #utilizamos checkout para situarnos dentro de nuestro repositorio
               
             - name: ls
