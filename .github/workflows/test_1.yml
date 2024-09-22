@@ -34,5 +34,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: [hola] #esto hace que este job se ejecute justo después que  el de "hola"
     steps:
-    - name: LS
+
+    - name: Checkout  #cuando se ejecute este job, va a comenzar, y lo primero que hará será utilizar este action que pertenece a guithub action, con el nombre checkpous y luego ejecutará el ls
+      uses: action/checkout@v4.1.7
+
+    - name: LS 
       run: ls -al   #nos lista directorios
