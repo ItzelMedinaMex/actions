@@ -2,7 +2,14 @@ name: Hola mundo
 
 # Eventos, para que el workflow se ejecute tenemos que indicarle cuando se va a ejecutar cuando se realice un evento
 # Se va a ejecutar cuando hagamos push al repositorio
-on: [push, pull_request]
+on: 
+  push: #esto es para cuando se haga push a main directamente se ejecute nuestro workflow
+    branches: 
+      - main
+
+  pull_request:  #esto significa que se ejecutará cuando unicamente se haga un pull request a la rama main
+    branches:
+      - main
 
 # los jobs nos permiten ejecutar todo lo que necesitemos dentro de algun servidor
 jobs: 
