@@ -7,9 +7,10 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: ls
-              run: |
+            - name: ls    #En este ejemplo, los comandos echo se ejecutarán en la misma secuencia en la terminal, como si estuvieran escritos en una sola línea.
+              run: |  #(directiva pay) El símbolo | en YAML se utiliza para definir bloques de texto multilínea, lo que permite que las líneas de código o cadenas de texto se mantengan en varias líneas sin alterar su formato. 
                     echo "hola mundito"  >> hola.txt
-                    cat hola.txt
+                    echo "Esto es un bloque multilínea"     
+                    cat hola.txt    
 
 

@@ -23,3 +23,11 @@ jobs:
 
             - name: node version                #aqui se ejecuta la versión de node
               run: node --version
+
+            - name: PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                php-version: '8.3'
+
+            - name: php version                #aqui se ejecuta la versión de node
+              run: php --version     #php
